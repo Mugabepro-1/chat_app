@@ -1,0 +1,25 @@
+.chatroom-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f1f9ff;
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #89c550;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
