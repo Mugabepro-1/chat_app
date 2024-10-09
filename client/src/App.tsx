@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AuthProvider } from './context/AuthContext';
+cd cdimport { AuthProvider } from './context/AuthContext';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import ChatRoom from './components/ChatRoom/ChatRoom';
@@ -21,4 +21,4 @@ const App: React.FC = () => {
 
 export default App;
 
-//I was just on the services folder for front and back integration and on the api.ts page to handle requests
+//Coded useAuth hook and it is done the job left is for tomorrow and in that i did not debug the any paramenter and the userData and profile bugs

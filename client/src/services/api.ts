@@ -1,9 +1,9 @@
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+const BASE_URL = 'http://localhost:3000';
 
 export const apiRequest = async (
     endpoint: string,
     method: string = 'GET',
-    body: any = null,
+    body: object | null = null,
     token: string | null = null
 ) => {
     const headers: HeadersInit = {

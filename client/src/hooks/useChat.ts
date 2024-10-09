@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { fetchChatRooms, sendMessage, fetchChatHistory, fetchOnlineUsers } from '../services/chatService';
+import { fetchChatRooms, sendMessage, fetchChatHistory} from '../services/chatService';
 
 export const useChat = (token: string) => {
     const [rooms, setRooms] = useState([]);
@@ -32,15 +32,6 @@ export const useChat = (token: string) => {
         }
     };
 
-    const getOnlineUsers = async (roomId: string) => {
-        try {
-            const onlineUsers = await fetchOnlineUsers(token, roomId);
-            return onlineUsers;
-        } catch (error) {
-            console.error('Error fetching online users:', error);
-            return [];
-        }
-    };
 
-    return { rooms, messages, loadChatRooms, loadChatHistory, postMessage, getOnlineUsers };
+    return { rooms, messages, loadChatRooms, loadChatHistory, postMessage};
 };
